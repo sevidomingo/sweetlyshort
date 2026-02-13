@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease;
+}
+
+#textbox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 40px;
+  background: rgba(20, 15, 10, 0.75);
+  backdrop-filter: blur(5px);
+}
+
+#text {
+  color: #f5e9d8;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#nextBtn {
+  background: #d4a85f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#nextBtn:hover {
+  background: #e5c07b;
+}
+
+.choiceBtn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #cfa65c;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.choiceBtn:hover {
+  background: #e3be7a;
+}
+
+#dimOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  transition: background 1.5s ease;
+}
